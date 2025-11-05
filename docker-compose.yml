@@ -1,0 +1,26 @@
+---
+
+services:
+  backend:
+    depends_on:
+      db:
+        condition: service_healthy
+        restart: true
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin --user=$${DB_USERNAME} --password=$${DB_PASSWORD} --host=localhost ping"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
