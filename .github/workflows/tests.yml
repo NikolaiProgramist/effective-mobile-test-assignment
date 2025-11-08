@@ -23,7 +23,7 @@ jobs:
         run: make setup
 
       - name: Run Tests
-        run: make test
+        run: make test-coverage
 
       - name: Run Linter
         run: make lint
