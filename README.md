@@ -8,6 +8,7 @@
 
 ```shell
 git clone https://github.com/NikolaiProgramist/effective-mobile-test-assignment.git
+cd effective-mobile-test-assignment
 ```
 
 2. Select setup type:
