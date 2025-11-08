@@ -22,4 +22,4 @@ RUN npm run build
 
 RUN > database/database.sqlite
 
-CMD ["bash", "-c", "php artisan migrate --seed && php artisan serve --host=0.0.0.0 --port=8000"]
+CMD ["bash", "-c", "php artisan migrate --seed && make start"]
