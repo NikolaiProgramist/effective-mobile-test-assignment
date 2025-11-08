@@ -10,7 +10,34 @@
 git clone https://github.com/NikolaiProgramist/effective-mobile-test-assignment.git
 ```
 
-2. Change the database environment variables in the .env.example as specified here:
+2. Select setup type:
+
+    - [SQLite](#-sqlite)
+    - [Docker](#-docker)
+
+3. Now you can use the API at: http://localhost:8000
+
+> [!TIP]
+> You can to use `postman` collection for testing API.
+> It placed to the `files/` directory.
+
+### ✏️ SQLite
+
+Run setup command:
+
+```shell
+make setup
+```
+
+Run server:
+
+```shell
+make start
+```
+
+### 🐋 Docker
+
+Change the database environment variables in the .env.example as specified here:
 
 ```shell
 DB_CONNECTION=mysql
@@ -21,10 +48,8 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-3. Run `docker-compose.yml`:
+Run `docker-compose.yml`:
 
 ```shell
 docker compose up
 ```
-
-4. Now you can use the API at: http://localhost:8000
