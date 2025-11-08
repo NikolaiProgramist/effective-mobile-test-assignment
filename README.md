@@ -1,6 +1,6 @@
 # This is test-assignment for Effective Mobile to vacancy Junior PHP-developer
 
-[![tests](https://github.com/NikolaiProgramist/effective-mobile-test-assignment/actions/workflows/tests.yml/badge.svg)](https://github.com/NikolaiProgramist/effective-mobile-test-assignment/actions/workflows/tests.yml)
+[![tests](https://github.com/NikolaiProgramist/effective-mobile-test-assignment/actions/workflows/tests.yml/badge.svg)](https://github.com/NikolaiProgramist/effective-mobile-test-assignment/actions/workflows/tests.yml) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=NikolaiProgramist_effective-mobile-test-assignment)](https://sonarcloud.io/summary/new_code?id=NikolaiProgramist_effective-mobile-test-assignment)
 
 ## Setup
 
