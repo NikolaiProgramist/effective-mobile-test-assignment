@@ -7,8 +7,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
     && php -r "unlink('composer-setup.php');"
 
-RUN curl -fsSL https://nodistro.nodesource.com/setup_22.12.0 | bash -
-RUN apt-get install -y nodejs npm
+RUN curl -fsSL https://nodistro.nodesource.com/setup_22.12.0 | bash - \
+    && apt-get install -y nodejs npm
 
 WORKDIR /app
 
