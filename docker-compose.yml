@@ -19,8 +19,8 @@ services:
       - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
     restart: always
     healthcheck:
-      test: ["CMD-SHELL", "mysqladmin --user=$${DB_USERNAME} --password=$${DB_PASSWORD} --host=localhost ping"]
+      test: [ "CMD-SHELL", "/usr/bin/mysql --user=${DB_USERNAME} --password=${DB_PASSWORD} --execute \"SHOW DATABASES;\"" ]
       interval: 10s
       retries: 5
       start_period: 30s
-      timeout: 10s
+      timeout: 20s
