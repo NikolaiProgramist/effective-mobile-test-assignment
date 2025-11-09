@@ -4,7 +4,7 @@
 
 > [!TIP]
 > You can to use `postman` collection for testing API.
-> It placed to the `files/` directory.
+> It placed to the [files/](files/Effective%20Mobile.postman_collection.json) directory.
 
 ## Setup
 
