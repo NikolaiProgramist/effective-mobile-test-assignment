@@ -19,7 +19,7 @@ class TaskFactory extends Factory
         $statuses = ['New', 'In progress', 'Complete', 'Remove'];
 
         return [
-            'title' => $this->faker->unique()->jobTitle(),
+            'title' => $this->faker->unique()->sentence(),
             'description' => $this->faker->text(),
             'status' => $this->faker->randomElement($statuses)
         ];
