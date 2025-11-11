@@ -49,6 +49,12 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
+Copy `.env.example` to `.env`:
+
+```shell
+cp -n .env.example .env
+```
+
 Run `docker-compose.yml`:
 
 ```shell
