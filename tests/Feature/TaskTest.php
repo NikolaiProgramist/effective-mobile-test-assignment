@@ -61,7 +61,7 @@ class TaskTest extends TestCase
             'title' => 'Updated name'
         ]);
 
-        $response = $this->patch(route('tasks.update', $task), [
+        $response = $this->put(route('tasks.update', $task), [
             'title' => 'Updated name'
         ]);
 
