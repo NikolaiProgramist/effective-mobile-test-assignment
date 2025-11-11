@@ -94,7 +94,7 @@
 		{
 			"name": "Update Task",
 			"request": {
-				"method": "PATCH",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Accept",
