@@ -6,7 +6,7 @@ setup:
 	cp -n .env.example .env
 	touch database/database.sqlite
 	php artisan key:generate
-	php artisan migrate
+	php artisan migrate --seed
 	npm ci
 	npm run build
 
