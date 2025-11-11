@@ -20,7 +20,7 @@ cd effective-mobile-test-assignment
     - [SQLite](#-sqlite)
     - [Docker](#-docker)
 
-3. Now you can use the API at: http://localhost:8000
+3. Now you can use the API at: http://localhost:8000/api/
 
 ### ✏️ SQLite
 
