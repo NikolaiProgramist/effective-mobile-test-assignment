@@ -175,7 +175,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": ""
+			"value": "localhost:8000/api"
 		}
 	]
 }
