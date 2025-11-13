@@ -16,7 +16,8 @@ class TaskController extends Controller
      */
     public function index(): AnonymousResourceCollection
     {
-        return TaskResource::collection(Task::paginate(5));
+        // It is better to use the paginate(5) method.
+        return TaskResource::collection(Task::all());
     }
 
     /**
