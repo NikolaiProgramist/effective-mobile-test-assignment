@@ -38,7 +38,7 @@ make start
 
 ### 🐋 Docker
 
-Change the database environment variables in the `.env.example` as specified here:
+Update the database environment variables in the `.env.example` file as follows:
 
 ```shell
 DB_CONNECTION=mysql
