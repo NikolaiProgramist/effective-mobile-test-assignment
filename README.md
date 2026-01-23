@@ -60,3 +60,15 @@ Run `docker-compose.yml`:
 ```shell
 docker compose up
 ```
+
+## Run tests
+
+```shell
+make test
+```
+
+## Run linter
+
+```shell
+make lint
+```
